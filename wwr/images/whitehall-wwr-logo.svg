@@ -1,0 +1,110 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 600" width="1200" height="1200">
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#ffb86b"/>
+      <stop offset="0.55" stop-color="#ffe3b8"/>
+      <stop offset="1" stop-color="#e8f6f8"/>
+    </linearGradient>
+    <linearGradient id="water" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#2aa6c4"/>
+      <stop offset="1" stop-color="#0d5f80"/>
+    </linearGradient>
+    <clipPath id="scene"><circle cx="300" cy="300" r="192"/></clipPath>
+    <path id="arcTop" d="M 85,300 A 215,215 0 0 1 515,300"/>
+    <path id="arcBottom" d="M 45,300 A 255,255 0 0 0 555,300"/>
+  </defs>
+
+  <!-- Badge -->
+  <circle cx="300" cy="300" r="292" fill="#0f2a44"/>
+  <circle cx="300" cy="300" r="280" fill="none" stroke="#f2994a" stroke-width="6"/>
+
+  <!-- Scene -->
+  <g clip-path="url(#scene)">
+    <rect x="100" y="100" width="400" height="400" fill="url(#sky)"/>
+    <circle cx="372" cy="205" r="38" fill="#f2994a"/>
+    <!-- back mountains -->
+    <polygon points="100,300 165,215 215,255 270,190 330,262 380,205 440,250 500,215 500,300" fill="#3d7a96"/>
+    <!-- front mountains -->
+    <polygon points="100,300 190,190 240,240 300,145 370,250 410,212 500,300" fill="#1d4e6e"/>
+    <polygon points="300,145 282,174 294,168 302,180 312,169 320,176" fill="#ffffff"/>
+    <polygon points="190,190 177,207 188,203 196,211 204,204" fill="#ffffff"/>
+    <!-- pines -->
+    <g fill="#0f2a44">
+      <polygon points="130,300 142,262 154,300"/>
+      <polygon points="150,300 160,272 170,300"/>
+      <polygon points="440,300 452,258 464,300"/>
+      <polygon points="462,300 471,274 480,300"/>
+    </g>
+    <!-- river -->
+    <rect x="100" y="292" width="400" height="210" fill="url(#water)"/>
+    <g fill="none" stroke="#ffffff" stroke-width="6" stroke-linecap="round">
+      <path d="M 100,300 q 25,-14 50,0 t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 t 50,0 t 50,0"/>
+      <path d="M 90,400 q 30,-18 60,0 t 60,0 t 60,0 t 60,0 t 60,0 t 60,0 t 60,0" opacity="0.85"/>
+      <path d="M 110,440 q 30,-18 60,0 t 60,0 t 60,0 t 60,0 t 60,0 t 60,0" opacity="0.6"/>
+    </g>
+    <!-- curling wave crests -->
+    <g fill="#ffffff">
+      <path d="M 150,392 c 10,-30 45,-30 50,-5 c -12,-12 -30,-6 -28,10 z"/>
+      <path d="M 420,388 c 10,-30 45,-30 50,-5 c -12,-12 -30,-6 -28,10 z"/>
+    </g>
+
+    <!-- paddlers -->
+    <g stroke="#0f2a44" stroke-linecap="round">
+      <!-- paddles -->
+      <line x1="232" y1="296" x2="262" y2="378" stroke-width="5"/>
+      <line x1="290" y1="300" x2="318" y2="380" stroke-width="5"/>
+      <line x1="370" y1="296" x2="340" y2="378" stroke-width="5"/>
+    </g>
+    <g fill="#0f2a44">
+      <ellipse cx="264" cy="384" rx="6" ry="13" transform="rotate(-20 264 384)"/>
+      <ellipse cx="320" cy="386" rx="6" ry="13" transform="rotate(-20 320 386)"/>
+      <ellipse cx="338" cy="384" rx="6" ry="13" transform="rotate(20 338 384)"/>
+      <!-- bodies -->
+      <path d="M 238,345 q 0,-28 14,-28 q 14,0 14,28 z"/>
+      <path d="M 288,348 q 0,-28 14,-28 q 14,0 14,28 z"/>
+      <path d="M 338,345 q 0,-28 14,-28 q 14,0 14,28 z"/>
+      <!-- heads -->
+      <circle cx="252" cy="306" r="9"/>
+      <circle cx="302" cy="309" r="9"/>
+      <circle cx="352" cy="306" r="9"/>
+    </g>
+    <!-- helmets -->
+    <g fill="#f2994a">
+      <path d="M 243,305 a 9,9 0 0 1 18,0 z"/>
+      <path d="M 293,308 a 9,9 0 0 1 18,0 z"/>
+      <path d="M 343,305 a 9,9 0 0 1 18,0 z"/>
+    </g>
+
+    <!-- raft -->
+    <path d="M 196,338 Q 300,362 408,338 Q 420,356 402,370 Q 300,392 202,370 Q 184,356 196,338 Z"
+          fill="#f2994a" stroke="#0f2a44" stroke-width="5" stroke-linejoin="round"/>
+    <path d="M 210,356 Q 300,374 394,356" fill="none" stroke="#c96b1f" stroke-width="4"/>
+
+    <!-- splash -->
+    <g fill="#ffffff">
+      <circle cx="186" cy="330" r="5"/>
+      <circle cx="174" cy="318" r="3.5"/>
+      <circle cx="192" cy="314" r="3"/>
+      <circle cx="420" cy="330" r="5"/>
+      <circle cx="432" cy="318" r="3.5"/>
+      <circle cx="414" cy="314" r="3"/>
+    </g>
+  </g>
+  <circle cx="300" cy="300" r="192" fill="none" stroke="#ffffff" stroke-width="7"/>
+
+  <!-- Lettering -->
+  <text font-family="'Arial Black', Impact, 'Helvetica Neue', sans-serif" font-weight="900"
+        font-size="54" fill="#ffffff" letter-spacing="6">
+    <textPath href="#arcTop" startOffset="50%" text-anchor="middle">WHITEHALL</textPath>
+  </text>
+  <text font-family="'Arial Black', Impact, 'Helvetica Neue', sans-serif" font-weight="900"
+        font-size="25" fill="#f2994a" letter-spacing="3">
+    <textPath href="#arcBottom" startOffset="50%" text-anchor="middle">WHITE WATER RAFTING CO.</textPath>
+  </text>
+
+  <!-- side marks -->
+  <g fill="#f2994a">
+    <polygon points="62,300 70,292 78,300 70,308"/>
+    <polygon points="522,300 530,292 538,300 530,308"/>
+  </g>
+</svg>
