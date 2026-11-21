@@ -109,9 +109,11 @@ footer {
     padding: 1rem;
     background-color: #eee;
     color: #000;
+    max-width: auto;
 }
 
 .indent {
+    clear: right;
     padding-left: 2rem;
 }
 
